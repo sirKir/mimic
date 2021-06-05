@@ -28,6 +28,10 @@ entryLogin.addEventListener('focus', (e) => {
   e.preventDefault;
   layout.classList.remove('bg')
 })
+entryPass.addEventListener('focus', (e) => {
+  e.preventDefault;
+  layout.classList.remove('bg')
+})
 
 
 
