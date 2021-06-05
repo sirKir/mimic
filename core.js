@@ -16,7 +16,9 @@ let entryPass = document.querySelector('#entryPass');
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
   if(entryLogin.value === "test@uralchem.com"){
-    layout.innerHTML = "<div></div>"
+    loginGroup.classList.add('hided');
+    loginGroupForm.classList.add('hided');
+    layout.classList.add('bg')
   }
 })
 entryLogin.addEventListener('focus', (e) => {
@@ -51,3 +53,10 @@ qrBackBtn.addEventListener('click', (e) =>  {
 })
 
 
+const smsCheck = document.querySelector('.sms-check')
+smsCheck.addEventListener('input', (e)=>{
+  e.preventDefault;
+  if(smsCheck.value.length == 4){
+    console.log("WORK !");
+  }
+})

@@ -133,3 +133,26 @@ body {
   text-align: center;
 }
 
+/* sms-подтверждение */
+.sms-form{
+  text-align: center;
+}
+.sms-form p{
+  margin-bottom: 80px;
+}
+.sms-check{
+  margin-bottom: 30px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #018445;
+  font-size: 28px;
+  color: #d1d2d4;
+  outline: none;
+}
+.sms-form a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #018445;
+}
