@@ -17,7 +17,7 @@ let entryPass = document.querySelector('#entryPass');
 
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
-  if(entryLogin.value === "test@uralchem.com"){
+  if(entryLogin.value == "Test@uc.com"){
     loginGroup.classList.add('hided');
     loginGroupForm.classList.add('hided');
     layout.classList.add('bg')
