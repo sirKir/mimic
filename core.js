@@ -4,6 +4,8 @@ const loginGroup = document.querySelector(".login__group");
 const loginGroupForm = document.querySelector(".login__group_form");
 const loginGroupFormQr = document.querySelector(".login__group_form_qr");
 const qrBackBtn = document.querySelector('#qrBackBtn');
+const smsForm = document.querySelector('.sms-form');
+ 
 
 const layout = document.querySelector('body')
 
@@ -19,12 +21,12 @@ entryBtn.addEventListener('click', (e) => {
     loginGroup.classList.add('hided');
     loginGroupForm.classList.add('hided');
     layout.classList.add('bg')
+    smsForm.classList.remove('hided');
   }
 })
 entryLogin.addEventListener('focus', (e) => {
   e.preventDefault;
   layout.classList.remove('bg')
-  console.log('Magick !');
 })
 
 
@@ -59,4 +61,9 @@ smsCheck.addEventListener('input', (e)=>{
   if(smsCheck.value.length == 4){
     console.log("WORK !");
   }
+})
+smsCheck.addEventListener('focus', (e) => {
+  e.preventDefault;
+  smsCheck.value = ""
+  layout.classList.remove('bg')
 })
