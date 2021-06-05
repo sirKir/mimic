@@ -161,15 +161,18 @@ body {
 
 
 
-
-
-
 /* second screen */
 .second-logo img{
   width: 100%;
   padding: 50px 10px 20px 10px;
 }
-.navbar button{
+.top-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-navbar button{
   background-color: transparent;
   border: none;
   margin-bottom: 20px;
