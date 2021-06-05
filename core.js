@@ -55,11 +55,16 @@ qrBackBtn.addEventListener('click', (e) =>  {
 })
 
 
+
 const smsCheck = document.querySelector('.sms-check')
+const firstScreen = document.querySelector('#first')
+const secondScreen = document.querySelector('#second')
+
 smsCheck.addEventListener('input', (e)=>{
   e.preventDefault;
   if(smsCheck.value.length == 4){
-    console.log("WORK !");
+    firstScreen.classList.add('hided')
+    secondScreen.classList.remove('hided')
   }
 })
 smsCheck.addEventListener('focus', (e) => {
@@ -67,3 +72,10 @@ smsCheck.addEventListener('focus', (e) => {
   smsCheck.value = ""
   layout.classList.remove('bg')
 })
+
+// second screen
+
+const newsBtn = document.querySelector('#newsBtn')
+const restBtn = document.querySelector('#restBtn')
+const scheduleBtn = document.querySelector('#scheduleBtn')
+const dmcBtn = document.querySelector('#dmcBtn')

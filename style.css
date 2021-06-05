@@ -156,3 +156,47 @@ body {
   font-weight: 600;
   color: #018445;
 }
+
+
+
+
+
+
+
+/* second screen */
+.second-logo img{
+  width: 100%;
+  padding: 50px 10px;
+}
+.services__wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+.services__item{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #018445;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 45%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.services-icon{
+  width: 80px;
+  margin-bottom: 10px;
+}
+.desc{
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
