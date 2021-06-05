@@ -6,7 +6,27 @@ const loginGroupFormQr = document.querySelector(".login__group_form_qr");
 const backBtn = document.querySelector('#backBtn');
 const qrBackBtn = document.querySelector('#qrBackBtn');
 
+const layout = document.querySelector('body')
 
+// entry
+const entryBtn = document.querySelector('#entryBtn');
+let entryLogin = document.querySelector('#entryLogin');
+let entryPass = document.querySelector('#entryPass');
+
+entryBtn.addEventListener('click', (e) => {
+  e.preventDefault;
+  if(entryLogin.value === "test@uralchem.com"){
+    layout.innerHTML = "<div></div>"
+  }
+})
+entryLogin.addEventListener('click', (e) => {
+  e.preventDefault;
+  layout.style.background = ""
+})
+
+
+
+//hiding-unhiding
 loginEntry.addEventListener('click', (e) =>  {
   e.preventDefault;
   loginGroup.classList.add('hided');
@@ -17,9 +37,6 @@ backBtn.addEventListener('click', (e) =>  {
   loginGroupForm.classList.add('hided');
   loginGroup.classList.remove('hided');
 })
-
-
-
 qrEntry.addEventListener('click', (e) => {
   e.preventDefault;
   loginGroup.classList.add('hided');
@@ -30,3 +47,5 @@ qrBackBtn.addEventListener('click', (e) =>  {
   loginGroupFormQr.classList.add('hided');
   loginGroup.classList.remove('hided');
 })
+
+
