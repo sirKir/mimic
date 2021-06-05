@@ -18,10 +18,13 @@ let entryPass = document.querySelector('#entryPass');
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
   if(entryLogin.value == "Test@uc.com"){
-    loginGroup.classList.add('hided');
-    loginGroupForm.classList.add('hided');
-    layout.classList.add('bg');
-    smsForm.classList.remove('hided');
+    setTimeout(()=>{
+      loginGroup.classList.add('hided');
+      loginGroupForm.classList.add('hided');
+      layout.classList.add('bg');
+      smsForm.classList.remove('hided');
+      entryPass.value = ""      
+    }, 3000)
   }
 })
 entryLogin.addEventListener('focus', (e) => {
@@ -67,10 +70,12 @@ const secondScreen = document.querySelector('#second')
 smsCheck.addEventListener('input', (e)=>{
   e.preventDefault;
   if(smsCheck.value.length == 4){
-    firstScreen.classList.add('hided')
-    layout.classList.remove('bg')
-    secondScreen.classList.remove('hided')
-    smsCheck.value = ""
+    setTimeout(() => {
+      firstScreen.classList.add('hided')
+      layout.classList.remove('bg')
+      secondScreen.classList.remove('hided')
+      smsCheck.value = ""      
+    }, 2000);
   }
 })
 smsCheck.addEventListener('focus', (e) => {
@@ -87,6 +92,10 @@ const scheduleBtn = document.querySelector('#scheduleBtn')
 const dmcBtn = document.querySelector('#dmcBtn')
 
 const exitBtn = document.querySelector('#exitBtn')
+const tutorBtn = document.querySelector('#tutorBtn')
+
+const thirdScreen = document.querySelector('#third')
+const backBtnTS = document.querySelector('#backBtnTS')
 
 exitBtn.addEventListener('click', (e) => {
   e.preventDefault
@@ -95,4 +104,18 @@ exitBtn.addEventListener('click', (e) => {
   firstScreen.classList.remove('hided')
   smsForm.classList.add('hided');
   loginGroup.classList.remove('hided');
+})
+
+tutorBtn.addEventListener('click', (e) => {
+  e.preventDefault
+  secondScreen.classList.add('hided')
+  thirdScreen.classList.remove('hided')
+})
+
+// THIRD
+
+backBtnTS.addEventListener('click', (e) => {
+  e.preventDefault
+  thirdScreen.classList.add('hided')
+  secondScreen.classList.remove('hided')
 })
