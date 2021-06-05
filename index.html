@@ -22,13 +22,13 @@
       <!-- login group -->
       <div class="login__group">
         <div class="col-sm-12">
-          <button id="login-entry" class="">
+          <button id="login-entry">
             Вход по логину и паролю
             <img src="img/ic_login_by_login_pass.png" alt="">
           </button>
         </div>
         <div class="col-sm-12">
-          <button id="qr-entry" class="">
+          <button id="qr-entry">
             Вход по QR-коду
             <img src="img/ic_login_by_qr_code.png" alt="">
           </button>
@@ -51,13 +51,31 @@
             <div class="col-sm-12">
              <span>Пароль</span>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 mb-3">
               <input type="text">
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button id="entryBtn" class="">Войти</button>
+              </div>
+              <div class="col-6">
+                <button id="backBtn" class="">Назад</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- login form end -->
+      <div class="row">
+          <div class="login__group_form_qr hided">
+            <div class="col-sm-12">
+              <div class="login__form">
+                <p class="warning">Отключено для stage-среды.</p>
+                <button id="qrBackBtn" class="">Назад</button>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 

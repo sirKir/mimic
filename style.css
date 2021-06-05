@@ -77,4 +77,56 @@ body {
 .login__group_form input:active{
   outline: none;
 }
+
+.login__group_form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d2d4;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #018445;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.login__group_form button:active {
+  background-color: #e2e2e4;
+}
+
+.login__group_form_qr button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d2d4;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #018445;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.login__group_form_qr{
+  padding-left: 30px;
+}
 /* input end */
+.login__group_form_qr .warning{
+  font-weight: 600;
+  color: darkred;
+  text-align: center;
+}
