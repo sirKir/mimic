@@ -20,7 +20,7 @@ entryBtn.addEventListener('click', (e) => {
   if(entryLogin.value == "Test@uc.com"){
     loginGroup.classList.add('hided');
     loginGroupForm.classList.add('hided');
-    layout.classList.add('bg')
+    layout.classList.add('bg');
     smsForm.classList.remove('hided');
   }
 })
