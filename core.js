@@ -66,10 +66,11 @@ smsCheck.addEventListener('input', (e)=>{
     firstScreen.classList.add('hided')
     layout.classList.remove('bg')
     secondScreen.classList.remove('hided')
+    smsCheck.value = ""
   }
 })
 smsCheck.addEventListener('focus', (e) => {
-  e.preventDefault;
+  e.preventDefault
   smsCheck.value = ""
   layout.classList.remove('bg')
 })
@@ -80,3 +81,14 @@ const newsBtn = document.querySelector('#newsBtn')
 const restBtn = document.querySelector('#restBtn')
 const scheduleBtn = document.querySelector('#scheduleBtn')
 const dmcBtn = document.querySelector('#dmcBtn')
+
+const exitBtn = document.querySelector('#exitBtn')
+
+exitBtn.addEventListener('click', (e) => {
+  e.preventDefault
+  secondScreen.classList.add('hided')
+  layout.classList.add('bg')
+  firstScreen.classList.remove('hided')
+  smsForm.classList.add('hided');
+  loginGroup.classList.remove('hided');
+})
