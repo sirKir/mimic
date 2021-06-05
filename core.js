@@ -22,6 +22,7 @@ entryBtn.addEventListener('click', (e) => {
 entryLogin.addEventListener('focus', (e) => {
   e.preventDefault;
   layout.classList.remove('bg')
+  console.log('Magick !');
 })
 
 
