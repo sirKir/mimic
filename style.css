@@ -3,7 +3,6 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  overflow: hidden;
 }
 
 .bg {
@@ -142,6 +141,7 @@ body {
   margin-bottom: 80px;
 }
 .sms-check{
+  width: 100%;
   margin-bottom: 30px;
   text-align: center;
   border-top: none;
