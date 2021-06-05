@@ -64,6 +64,7 @@ smsCheck.addEventListener('input', (e)=>{
   e.preventDefault;
   if(smsCheck.value.length == 4){
     firstScreen.classList.add('hided')
+    layout.classList.remove('bg')
     secondScreen.classList.remove('hided')
   }
 })

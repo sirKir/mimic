@@ -166,14 +166,19 @@ body {
 /* second screen */
 .second-logo img{
   width: 100%;
-  padding: 50px 10px;
+  padding: 50px 10px 20px 10px;
+}
+.navbar button{
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
 }
 .services__wrapper{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5px;
+  padding: 15px;
 }
 .services__item{
   background-color: transparent;
