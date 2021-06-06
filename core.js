@@ -124,6 +124,15 @@ restBtn.addEventListener('click', (e) => {
   e.preventDefault
   secondScreen.classList.add('hided')
   restScreen.classList.remove('hided')
+
+  // получаем и выводим дату
+  let nowDate = new Date();
+  nowDate = nowDate.toLocaleString("ru", {year: 'numeric', month: 'numeric', day: 'numeric'})
+  restDate.innerHTML = nowDate;
+
+  let dayOfTheEnd = new Date(new Date().getFullYear(), 11, 31);
+  dayOfTheEnd = dayOfTheEnd.toLocaleString("ru", {year: 'numeric', month: 'numeric', day: 'numeric'})
+  endDate.innerHTML = dayOfTheEnd; 
 })
 
 
@@ -152,8 +161,12 @@ backBtnDms.addEventListener('click', (e) => {
 //FIVE - REST
 const backBtnRest = document.querySelector('#backBtnRest')
 const restScreen = document.querySelector('#rest-screen')
+const restDate = document.querySelector('#rest-date')
+const endDate = document.querySelector('#rest-date-end-year')
 
 backBtnRest.addEventListener('click', (e) => {
   restScreen.classList.add('hided')
   secondScreen.classList.remove('hided')
 })
+
+// SIX - NEWS
