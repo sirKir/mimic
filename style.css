@@ -259,7 +259,7 @@ body {
   font-weight: 600;
 }
 
-/* FOUR */
+/* FOUR - DMC Screen */
 
 .top-navbar_dms{
   background-color: #018445;
@@ -279,7 +279,7 @@ body {
   text-align: center;
   margin: 0;
   padding-top: 20px;
-  padding-left: 25px;
+  padding-left: 20px;
   color: #fff;
   font-size: 25px;
   font-weight: 600;
@@ -321,4 +321,59 @@ body {
 }
 .dms-description-btn:active{
   background-color: #00522a;
+}
+.dms-description-btn:hover{
+  color: #fff;
+}
+
+/* FIVE - REST Screen */
+
+.top-navbar_rest{
+  background-color: #018445;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top-navbar_rest button{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.top-navbar_rest p{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.rest_title{
+  font-size: 14px;
+  font-weight: bold;
+  color: #b6b6b6;
+  margin-bottom: 5px;
+}
+.rest_info{
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-weight: bold;
+}
+.rest_number{
+  font-size: 26px;
+  color: #018445;
+  font-weight: bold;
+}
+#rest-date{
+  margin-right: 150px;
+  font-style: italic;
+}
+#rest-date-end-year{
+  margin-right: 150px;
+  font-style: italic;
 }

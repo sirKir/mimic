@@ -17,7 +17,7 @@ let entryPass = document.querySelector('#entryPass');
 
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
-  if(entryLogin.value == "Test@uc.com"){
+  if(entryLogin.value.toLowerCase() == "test@uc.com"){
     preloader.classList.remove('hided');
     setTimeout(()=>{
       loginGroup.classList.add('hided');
@@ -120,6 +120,11 @@ dmcBtn.addEventListener('click', (e) => {
   secondScreen.classList.add('hided')
   dmsScreen.classList.remove('hided')
 })
+restBtn.addEventListener('click', (e) => {
+  e.preventDefault
+  secondScreen.classList.add('hided')
+  restScreen.classList.remove('hided')
+})
 
 
 
@@ -135,12 +140,20 @@ backBtnTS.addEventListener('click', (e) => {
 })
 
 
-//FOUR
+//FOUR - DMC
 const backBtnDms = document.querySelector('#backBtnDms')
 const dmsScreen = document.querySelector('#dms-screen')
 
 backBtnDms.addEventListener('click', (e) => {
-  console.log(e);
   dmsScreen.classList.add('hided')
+  secondScreen.classList.remove('hided')
+})
+
+//FIVE - REST
+const backBtnRest = document.querySelector('#backBtnRest')
+const restScreen = document.querySelector('#rest-screen')
+
+backBtnRest.addEventListener('click', (e) => {
+  restScreen.classList.add('hided')
   secondScreen.classList.remove('hided')
 })
