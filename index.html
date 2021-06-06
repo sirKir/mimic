@@ -91,7 +91,7 @@
             <input class="sms-check" type="password" placeholder="Код проверки" maxlength="4">
           </div>
           <div class="col-12">
-            <a href="#">Не получили код?</a>
+            <a id="nah" href="#">Не получили код?</a>
           </div>
         </div>
       </div>
@@ -650,6 +650,66 @@
 
   </div>
 
+  <!-- EIGHT-calendar-screen -->
+  <div id="tableBlad" class="container hided">
+    <div class="row">
+      <div class="col-12 p-0">
+        <div class="top-navbar_calendar">
+          <button id="backBtnCalendar">&lsaquo; Назад</button>
+          <p>График работы</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <table id="calendar2">
+        <thead>
+          <tr><td>&laquo;<td colspan="5"><td>&raquo;
+          <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+        <tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="subheader_wrap">
+        <span class="subheader1">Праздничный день</span>
+        <span class="subheader2">Ночная смена</span>
+        <span class="subheader3">Дневная смена</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="rest_info">
+          Продолжительность смены 
+          <span class="rest_number">8</span>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="rest_title">Всего за месяц: </p>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="rest_info">
+          Рабочих дней
+          <span id="dayWork" class="rest_number">3***</span>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="rest_info">
+          Праздничных/выходных дней
+          <span id="dayRest" class="rest_number">***</span>
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="rest_info">
+          Рабочих часов
+          <span id="hoursWork" class="rest_number">***</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- ТРУБА Я ШАТАЛ ЭТАТ ТАБЛИЦ !! -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="core.js"></script>

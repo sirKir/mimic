@@ -417,7 +417,7 @@ flex-direction: column;
   margin-bottom: 5px;
 }
 .news_image img{
-  width: 125px;
+  width: 118px;
 }
 .news_title{
   font-size: 14px;
@@ -434,4 +434,115 @@ flex-direction: column;
   font-size: 14px;
   color: #b6b6b6;
   margin: 0;
+}
+
+
+/* EIGHT-calendar-screen */
+.top-navbar_calendar{
+  background-color: #018445;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top-navbar_calendar button{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.top-navbar_calendar p{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.subheader_wrap{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.subheader1{
+  background-color: rgb(231, 140, 92);
+  padding: 5px;
+  font-size: 12px;
+  width: 33%;
+  text-align: center;
+  color: #fff;
+}
+.subheader2{
+  background-color: yellow;
+  padding: 5px;
+  font-size: 12px;
+  width: 34%;
+  text-align: center;
+}
+.subheader3{
+  background-color: rgb(44, 86, 122);
+  padding: 5px;
+  font-size: 12px;
+  width: 33%;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+
+/* CALENDAR */
+
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  /* days */
+  font-size: small;
+  color: rgb(85, 85, 85);
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: bold;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+  color: #018445;
+  font-size: 20px;
+  margin-bottom: 5px;
+  height: 100px;
+  /* month */
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, 
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1),
+#calendar2 thead tr:nth-child(1) td:nth-child(3){
+  font-size: 40px;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;  
+}
+
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+  font-weight: bold;
+}
+#calendar2 tbody td.today {
+  background: #018445;
+  color: #fff;
 }
