@@ -17,7 +17,7 @@ let entryPass = document.querySelector('#entryPass');
 
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
-  if(entryLogin.value.toLowerCase() == "test@uc.com"){
+  if(entryLogin.value.toLowerCase()){
     preloader.classList.remove('hided');
     setTimeout(()=>{
       loginGroup.classList.add('hided');
@@ -135,7 +135,11 @@ restBtn.addEventListener('click', (e) => {
   endDate.innerHTML = dayOfTheEnd; 
 })
 
-
+newsBtn.addEventListener('click', (e) => {
+  e.preventDefault
+  secondScreen.classList.add('hided')
+  newsScreen.classList.remove('hided')
+})
 
 
 
@@ -170,3 +174,11 @@ backBtnRest.addEventListener('click', (e) => {
 })
 
 // SIX - NEWS
+
+const newsScreen = document.querySelector('#news-screen')
+const backBtnNews = document.querySelector('#backBtnNews')
+
+backBtnNews.addEventListener('click', (e) => {
+  newsScreen.classList.add('hided')
+  secondScreen.classList.remove('hided')
+})
