@@ -5,7 +5,7 @@ const loginGroupForm = document.querySelector(".login__group_form");
 const loginGroupFormQr = document.querySelector(".login__group_form_qr");
 const qrBackBtn = document.querySelector('#qrBackBtn');
 const smsForm = document.querySelector('.sms-form');
- 
+const preloader = document.querySelector('.preloader'); 
 
 const layout = document.querySelector('body')
 
@@ -18,12 +18,14 @@ let entryPass = document.querySelector('#entryPass');
 entryBtn.addEventListener('click', (e) => {
   e.preventDefault;
   if(entryLogin.value == "Test@uc.com"){
+    preloader.classList.remove('hided');
     setTimeout(()=>{
       loginGroup.classList.add('hided');
       loginGroupForm.classList.add('hided');
       layout.classList.add('bg');
       smsForm.classList.remove('hided');
-      entryPass.value = ""      
+      entryPass.value = ""  
+      preloader.classList.add('hided');    
     }, 3000)
   }
 })
@@ -70,11 +72,13 @@ const secondScreen = document.querySelector('#second')
 smsCheck.addEventListener('input', (e)=>{
   e.preventDefault;
   if(smsCheck.value.length == 4){
+    preloader.classList.remove('hided'); 
     setTimeout(() => {
       firstScreen.classList.add('hided')
       layout.classList.remove('bg')
       secondScreen.classList.remove('hided')
-      smsCheck.value = ""      
+      smsCheck.value = ""   
+      preloader.classList.add('hided');    
     }, 2000);
   }
 })
@@ -111,11 +115,32 @@ tutorBtn.addEventListener('click', (e) => {
   secondScreen.classList.add('hided')
   thirdScreen.classList.remove('hided')
 })
+dmcBtn.addEventListener('click', (e) => {
+  e.preventDefault
+  secondScreen.classList.add('hided')
+  dmsScreen.classList.remove('hided')
+})
+
+
+
+
+
 
 // THIRD
 
 backBtnTS.addEventListener('click', (e) => {
   e.preventDefault
   thirdScreen.classList.add('hided')
+  secondScreen.classList.remove('hided')
+})
+
+
+//FOUR
+const backBtnDms = document.querySelector('#backBtnDms')
+const dmsScreen = document.querySelector('#dms-screen')
+
+backBtnDms.addEventListener('click', (e) => {
+  console.log(e);
+  dmsScreen.classList.add('hided')
   secondScreen.classList.remove('hided')
 })

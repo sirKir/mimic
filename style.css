@@ -5,6 +5,18 @@ body {
   height: 100vh;
 }
 
+.preloader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f5f7f6;
+  height: 100vh;
+}
+.preloader img{
+  width: 100%;
+  padding-top: 250px;
+}
+
 .bg {
   /* bg */
   background: url('img/bg_login.png') no-repeat;
@@ -198,6 +210,9 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.services__wrapper button:active {
+  background-color: #e2e2e4;
+}
 .services-icon{
   width: 80px;
   margin-bottom: 10px;
@@ -245,3 +260,65 @@ body {
 }
 
 /* FOUR */
+
+.top-navbar_dms{
+  background-color: #018445;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.top-navbar_dms button{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.top-navbar_dms p{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 25px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.dms_title{
+  font-size: 14px;
+  font-weight: bold;
+  color: #b6b6b6;
+  margin-bottom: 5px;
+}
+.dms_info{
+  border-bottom: 1px solid #018445;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.dms_info img{
+  width: 35px;
+}
+.dms-description-btn{
+  cursor: pointer;
+  display: block;
+  border: 0;
+  padding: 8px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #018445;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3px;
+  font-weight: 600;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.dms-description-btn:active{
+  background-color: #00522a;
+}
